@@ -1,0 +1,16 @@
+pennies = int(input('How many pennies do you have?'))
+nickels = int(input('How many nickels do you have?'))
+dimes = int(input('How many dimes do you have?'))
+quarters = int(input('How many quarters do you have?'))
+half_dollars = int(input('How many half dollars do you have?'))
+dollars = int(input('How many one-dollar coins do you have?'))
+#now print results as int to avoid 3.0 pennies
+
+change = float(pennies * 0.01) + float(nickels * 0.05) + float(dimes * 0.1) + float(quarters * 0.25) + float(half_dollars * 0.5) + (dollars)
+print(change)
+print("You have", int(pennies), "pennies.")
+print("You have", int(nickels), "nickels.")
+print("You have", int(dimes), "dimes.")
+print("You have", int(quarters), "quarters.")
+print("You have", int(half_dollars), "half dollars.")
+print("You have", int(dollars), "one-dollar coins.")

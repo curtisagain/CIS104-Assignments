@@ -8,7 +8,7 @@ dollars = int(input('How many one-dollar coins do you have?'))
 
 change = float(pennies * 0.01) + float(nickels * 0.05) + float(dimes * 0.1) + float(quarters * 0.25) + float(half_dollars * 0.5) + (dollars)
 change = str(round(change, 2))
-# rounds to 2 decimal points.
+# rounds to 2 decimal points. Solution from https://stackoverflow.com/questions/20457038/how-to-round-to-2-decimals-with-python
 if pennies == 1: print("You have 1 penny.")
 else: print("You have", int(pennies), "pennies.")
 if nickels == 1: print("You have 1 nickel.")

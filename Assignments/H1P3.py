@@ -10,18 +10,30 @@ change = float(pennies * 0.01) + float(nickels * 0.05) + float(dimes * 0.1) + fl
 change = str(round(change, 2))
 # rounds to 2 decimal points. Solution from https://stackoverflow.com/questions/20457038/how-to-round-to-2-decimals-with-python
 
-if pennies == 1: print("You have 1 penny.")
-else: print("You have", int(pennies), "pennies.")
-if nickels == 1: print("You have 1 nickel.")
-else: print("You have", int(nickels), "nickels.")
-if dimes == 1: print("You have 1 dime.")
-else: print("You have", int(dimes), "dimes.")
-if quarters == 1: print("You have 1 quarter.")
-else: print("You have", int(quarters), "quarters.")
-if half_dollars == 1: print("You have 1 half dollar.")
-else: print("You have", int(half_dollars), "half dollars.")
-if dollars == 1: print("You have 1 dollar coin.")
-else: print("You have", int(dollars), "one-dollar coins.")
+if pennies == 1: 
+    print("You have 1 penny.")
+else: 
+    print("You have", int(pennies), "pennies.")
+if nickels == 1: 
+    print("You have 1 nickel.")
+else: 
+    print("You have", int(nickels), "nickels.")
+if dimes == 1: 
+    print("You have 1 dime.")
+else: 
+    print("You have", int(dimes), "dimes.")
+if quarters == 1: 
+    print("You have 1 quarter.")
+else: 
+    print("You have", int(quarters), "quarters.")
+if half_dollars == 1: 
+    print("You have 1 half dollar.")
+else: 
+    print("You have", int(half_dollars), "half dollars.")
+if dollars == 1: 
+    print("You have 1 dollar coin.")
+else: 
+    print("You have", int(dollars), "one-dollar coins.")
 # all of the if/else is for grammar on output where the value is one.
-
-print("The value of all of your coins is $",float(change),".")
+print("The value of all of your coins is $" + str(change) + ".")
+# printing as string fixes weird spacing issues.

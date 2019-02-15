@@ -23,7 +23,7 @@ def divide(num1, num2):
 # This function finds the power
 def pow(num1, num2):
     answer = num1 ** num2
-   return print(answer)
+    return print(answer)
 
 # This function inverts answer
 def invert(answer):

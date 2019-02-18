@@ -52,7 +52,7 @@ while entry != 'X' and entry !='x':
     print (answer)
   
   elif entry == "c" or "C":
-    answer = calculator.memClear(mem) 
+    answer = calculator.memClear(num1) 
     num1 = answer
     print ("Memory cleared.")
   

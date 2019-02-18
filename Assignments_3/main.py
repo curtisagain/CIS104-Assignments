@@ -12,6 +12,7 @@ print("s Save")
 print("r Recall")
 print("c Clear Memory")
 print("x Exit")
+print("If using function i, s, r, c, or x, enter any value for second number.")
 entry = input("> ")
 num2 = float(input("Enter second number: "))
 
@@ -19,38 +20,55 @@ num2 = float(input("Enter second number: "))
 
 # all variables in main
 while entry != 'X' and entry !='x':
+  
   if entry == "+":
-    calculator.add(num1,num2)
-    from calculator import answer
+    answer = calculator.add (num1,num2)
+    num1 = answer
+    print (answer)
+  
   elif entry == "-":
-    calculator.subtract(num1,num2)
-    from calculator import answer
+    answer = calculator.subtract (num1,num2)
+    num1 = answer
+    print (answer)
+  
   elif entry == "*":
-    calculator.multiply(num1,num2)  
-    from calculator import answer
+    answer = calculator.multiply (num1,num2)  
+    num1 = answer
+    print (answer)
+
   elif entry == "/":
-    calculator.divide(num1,num2)
-    from calculator import answer
+    answer = calculator.divide (num1,num2)
+    num1 = answer
+    print (answer)
+
   elif entry == "^":
-    calculator.pow(num1,num2)
-    from calculator import answer
+    answer = calculator.pow(num1,num2)
+    num1 = answer
+    print (answer)
+
   elif entry == "i" or "I":
-    calculator.invert(num1,num2) 
-    from calculator import answer
-  elif entry == "s" or "S":
-    calculator.save(num1,num2) 
-    from calculator import answer
-  elif entry == "r" or "R":
-    calculator.recall(num1,num2) 
-    from calculator import answer
+    answer = calculator.invert(num1) 
+    num1 = answer
+    print (answer)
+  
   elif entry == "c" or "C":
-    calculator.memClear(num1,num2) 
-    from calculator import answer
+    answer = calculator.memClear(mem) 
+    num1 = answer
+    print ("Memory cleared.")
+  
+  elif entry == "s" or "S":
+    answer = calculator.save(num1) 
+    num1 = answer
+    print (answer)
+
+  elif entry == "r" or "R":
+    answer = calculator.recall(num1) 
+    num1 = answer
+    print (answer)
+
   else:
     print("Invalid input.")          
-  
-  num1 = answer
-  entry = input(print("> ")) 
+  entry = input("> ") 
   num2 = float(input("Enter second number: "))   
   if entry != "x" or "X":
       continue

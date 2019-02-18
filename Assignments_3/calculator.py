@@ -1,4 +1,3 @@
-answer = 0
 mem = 0
 # This function adds two numbers 
 def add(num1, num2):

@@ -1,4 +1,3 @@
-mem = 0
 # This function adds two numbers 
 def add(num1, num2):
    return num1 + num2
@@ -25,10 +24,10 @@ def invert(num1):
     return 0.0 - num1
 
 # This function saves answer
-def save(num1):
+def save(answer):
     global mem
-    mem = num1
-    return ("Saved.")
+    mem = answer
+    return 0
 
 # This function recalls memory
 def recall(num1):
@@ -37,6 +36,14 @@ def recall(num1):
     return (num1)
 
 # This function clears memory
-def memClear(mem):
+def memClear():
+    global mem
     mem = 0
-    return print ("Memory Cleared.")
+    return 0
+
+    # This function clears the whole calculator
+def clear(num1):
+    global mem
+    mem = 0
+    num1 = 0
+    return 0

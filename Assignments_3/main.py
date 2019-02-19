@@ -72,4 +72,3 @@ while entry != 'X' and entry !='x':
   num2 = float(input("Enter second number: "))   
   if entry != "x" or "X":
       continue
-

@@ -52,7 +52,7 @@ while True :
 
     else:
       print("Invalid input.")
-  # Elif in case I want to add more in the future
+  
   elif (entry != "+" or entry != "-" or entry != "*" or entry != "/" or entry != "^"):
     if (entry == "i" or entry == "I"):
       answer = calculator.invert(num1) 
@@ -82,6 +82,7 @@ while True :
       print ("Recalled.")
       print (answer)
       entry = input("> ")
+      
     # x will break loop later.
     elif (entry == "x" or entry == "X"):
       print ("Goodbye!")
@@ -92,3 +93,6 @@ while True :
 
     if entry != "x" or "X":
       continue         
+
+    if entry != "x" or "X":
+      continue          

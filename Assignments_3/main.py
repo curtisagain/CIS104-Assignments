@@ -82,7 +82,7 @@ while True :
       print ("Recalled.")
       print (answer)
       entry = input("> ")
-      
+
     # x will break loop later.
     elif (entry == "x" or entry == "X"):
       print ("Goodbye!")
@@ -92,7 +92,4 @@ while True :
       num1 = float(input("Enter first number: "))
 
     if entry != "x" or "X":
-      continue         
-
-    if entry != "x" or "X":
-      continue          
+      continue 

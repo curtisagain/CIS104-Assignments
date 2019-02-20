@@ -91,5 +91,5 @@ while True :
       print ("Invalid entry.")
       num1 = float(input("Enter first number: "))
 
-    if entry != "x" or "X":
-      continue 
+  elif entry != "x" or "X":
+    continue 

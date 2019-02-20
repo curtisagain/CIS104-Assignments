@@ -1,5 +1,5 @@
 import calculator
-
+# num1 and num2 in main to avoid calling it from the calculator.
 num1 = float(input("Enter first number: "))
 print("Select operation.")
 print("+ Add")
@@ -21,10 +21,15 @@ while True :
     num2 = float(input("Enter second number: "))
   
     if entry == "+":
+      # stores for this iteration
       answer = calculator.add (num1,num2)
+      # transfers to first number
       num1 = answer
+      # outputs answer
       print (answer)
+      # asks for next entry
       entry = input("> ")
+      # continues to check operations
   
     elif entry == "-":
       answer = calculator.subtract (num1,num2)
@@ -52,7 +57,8 @@ while True :
 
     else:
       print("Invalid input.")
-  
+
+  # doing these in a different bracket to avoid asking for a pointless num2
   elif (entry != "+" or entry != "-" or entry != "*" or entry != "/" or entry != "^"):
     if (entry == "i" or entry == "I"):
       answer = calculator.invert(num1) 
@@ -86,6 +92,8 @@ while True :
     # x will break loop later.
     elif (entry == "x" or entry == "X"):
       print ("Goodbye!")
+      # stopping endless goodbye
+      break
     
     else:
       print ("Invalid entry.")

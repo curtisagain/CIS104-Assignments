@@ -41,7 +41,7 @@ def memClear():
     mem = 0
     return 0
 
-    # This function clears the whole calculator
+# This function clears the whole calculator
 def clear(num1):
     global mem
     mem = 0

@@ -47,3 +47,12 @@ def clear(num1):
     mem = 0
     num1 = 0
     return 0
+
+# Checks operator for float https://www.tutorialspoint.com/How-to-check-if-a-string-can-be-converted-to-float-in-Python
+def floatCheck(entry ,num1):
+   try:
+      float(entry)
+      num1 = entry
+      return 0
+   except ValueError:
+      return 1

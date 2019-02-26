@@ -51,29 +51,6 @@ while True :
         print (answer)
         entry = input("> ")
 
-<<<<<<< HEAD
-    elif entry == "^":
-      answer = calculator.pow(num1,num2)
-      num1 = answer
-      print (answer)
-      entry = input("> ")
-    # user errors
-    else:
-      print("Invalid input.")
-  
-  elif (entry != "+" or entry != "-" or entry != "*" or entry != "/" or entry != "^"):
-    if (entry == "i" or entry == "I"):
-      answer = calculator.invert(num1) 
-      num1 = answer
-      print (answer)
-      entry = input("> ")
-  
-    elif (entry == "m" or entry == "M"):
-      calculator.memClear() 
-      print ("Memory cleared.")
-      print (answer)
-      entry = input("> ")
-=======
       elif entry == "^":
         answer = calculator.pow(num1,num2)
         num1 = answer
@@ -101,7 +78,6 @@ while True :
         calculator.clear(num1) 
         num1 = float(input("Cleared. Enter first number: "))
         entry = input("> ")
->>>>>>> c4b69b5a60982d6190996fd69d07210d1f6675a0
   
       elif (entry == "s" or entry == "S"):
         calculator.save(answer) 

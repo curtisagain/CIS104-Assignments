@@ -49,7 +49,7 @@ while True :
       num1 = answer
       print (answer)
       entry = input("> ")
-
+    # user errors
     else:
       print("Invalid input.")
   

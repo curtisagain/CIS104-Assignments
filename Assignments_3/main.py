@@ -47,9 +47,14 @@ while True :
 
       elif entry == "/":
         answer = calculator.divide (num1,num2)
-        num1 = answer
-        print (answer)
-        entry = input("> ")
+        if (answer != "error"):
+          num1 = answer
+          print (answer)
+          entry = input("> ")
+        else:
+          print ("Division Error.")
+          num1 = float(input("Enter first number: "))
+          entry = input(">")
 
       elif entry == "^":
         answer = calculator.pow(num1,num2)

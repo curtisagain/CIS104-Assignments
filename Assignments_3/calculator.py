@@ -12,8 +12,12 @@ def multiply(num1, num2):
 
 # This function divides two numbers
 def divide(num1, num2):
-   return num1 / num2
-        # https://www.programiz.com/pnum2thon-programming/examples/calculator
+   if (num2 != 0):
+      return num1 / num2
+   else:    
+      return "error"
+      # Error Management
+      # https://www.programiz.com/pnum2thon-programming/examples/calculator
 
 # This function finds the power
 def pow(num1, num2):

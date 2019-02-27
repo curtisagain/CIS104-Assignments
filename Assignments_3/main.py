@@ -16,7 +16,7 @@ print("x Exit")
 entry = input("> ")
 # Like a do while loop in python
 while True :
-  # num1 isn't a float
+  # entry isn't a float
   if (calculator.floatCheck (entry, num1) == 1) :
     if (entry == "+" or entry == "-" or entry == "*" or entry == "/" or entry == "^"):
       
@@ -100,7 +100,8 @@ while True :
       else:
         print ("Invalid entry.")
         num1 = float(input("Enter first number: "))
-
+        entry = input(">")
+        
     elif (entry != "x" or entry != "X"):
       continue 
   # restart with entry as num1

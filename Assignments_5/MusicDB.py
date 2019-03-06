@@ -1,6 +1,7 @@
 import json
 # Creates a dictionary for song as a variable
 totalSongs = 0
+
 Song = {
     "Title": None,
     "Artist": None,
@@ -63,21 +64,3 @@ def callMenu():
      "help : Display this menu\n"
      "clear : Clear the music database\n"
      "exit : Exit the Program\n")
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

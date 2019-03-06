@@ -50,7 +50,7 @@ def listSong(): #not working yet
         emptyEntry = entry.replace('"', '').strip("{").strip("}").strip(",").split("}{") #prints the songs without the formatting from json
     for s in emptyEntry:
         count = count + 1
-        print("Song #{}: {}\n".format (count, s))
+        print("Song #" ,count, ":" ,s, "\n")
 
 def callMenu():
     print("add : Add a new song to the music database\n"

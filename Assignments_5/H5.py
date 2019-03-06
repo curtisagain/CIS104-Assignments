@@ -1,7 +1,7 @@
 import json
 import MusicDB
 
-totalSongs = 0
+
 MusicDB.clearFile ()
 MusicDB.callMenu ()
 
@@ -9,10 +9,10 @@ while True:
     command = input("Enter one of the listed commands: ")
     if command == "add":
         MusicDB.addSong ()
-    elif command == "save" and totalSongs <= 8:
+    elif command == "save" and MusicDB.totalSongs <= 8:
         MusicDB.saveSong ()
-        totalSongs = totalSongs + 1
-    elif command == "save" and totalSongs > 8:
+        MusicDB.totalSongs = MusicDB.totalSongs + 1
+    elif command == "save" and MusicDB.totalSongs > 8:
         print("Too many songs.")
     elif command == "clear":
         MusicDB.clearFile ()

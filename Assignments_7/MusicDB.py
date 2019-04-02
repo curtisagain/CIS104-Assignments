@@ -1,5 +1,4 @@
 import json
-# Creates a dictionary for song as a variable
 totalSongs = 0
 
 Song = {
@@ -44,15 +43,12 @@ def clearFile(): #clears the json file
     file = open("MusicDB.txt", "w")
     file.truncate(0)
 
-def listBy():
+
     f = open("MusicDB.txt", "r")
     for entry in f:
-        empty = []
+        entry = []
         emptyEntry = entry.replace('"', '').strip("{").strip("}").strip(",").split("}{")
-    list(dict.values(f))
-    for thing  in Song:
-    for key, value in sortingList:
-
+        list(dict.values(f)) = emptyEntry 
 def listSong(): 
     if totalSongs == 0:
         print("No songs on list, try saving. ")
